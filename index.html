@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- заголовок -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Codesford
+		</title>
+		<link href="css/style_testpage.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+	<div class="header">
+		<a href="https://codesford.com/" class="logo"><img class="img" src="https://codesford.com/static/website/img/logo.svg"></a>
+		<div class="header-right">
+			<a href="https://codesford.com/ru/">Главная</a>
+			<a href="https://codesford.com/ru/study/">Учиться</a>
+			<a href="https://codesford.com/ru/crew/">Команда</a>
+			<a href="https://codesford.com/accounts/ru/signin/">Войти</a>
+			<a class="active" href="https://codesford.com/accounts/ru/register/">Зарегистрироваться</a>
+			<a href="https://codesford.com/"><span class="icons"><img class="flag" src="https://www.flaticon.com/svg/static/icons/svg/323/323367.svg"
+                                                                    alt="" value="en"></span></a></a>
+			<a href="https://codesford.com/ru/"><span class="icons"><img class="flag" src="https://www.flaticon.com/svg/static/icons/svg/323/323300.svg" alt=""
+                                                                  value="ru"></span></a></a>
+	</div>
+	<div>
+		<div><!-- тело сайта -->
+			<h1 class="head1">Часто задаваемые вопросы:</h1>
+		</div>
+				<div class="spoiler">
+			<button class="accordion">Как производится обучение?</button>
+				<div class="panel">
+					<p>Обучение производится в полностью дистанционном режиме в виде онлайн-лекций, онлайн мастер-классов, а также индивидуальных уроков</p>
+			</div>
+
+			<button class="accordion">Каким способом производится оплата?</button>
+				<div class="panel">
+					<p>Оплатить обучение возможно посредством формы оплаты, представленной на сайте в разделе: "Оплата обучения"</p>
+			</div>
+
+			<button class="accordion">Могу ли я вернуть потраченные средства?</button>
+				<div class="panel">
+					<p>Если Вам не понравится курс, 
+					то Вы всегда можете сделать запрос на возврат средств. 
+					Все средства за курс, исключая комиссию сервиса и комиссию переводов, вернутся на вашу банковскую карту.</p>
+			</div>
+			<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+				for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+				panel.style.maxHeight = null;
+				} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+						} 
+					});
+				}
+			</script>
+		<div><!-- тело сайта -->
+			<h2 class="head2">Если у вас все еще остались вопросы, просим написать нам, используя форму ниже:</h2>
+		</div>
+		<div class="container">
+			<form action="action_page.php">
+
+			<label for="fname">Ваше имя</label>
+			<input type="text" id="fname" name="firstname" placeholder="Как вас зовут?">
+
+			<label for="lname">E-mail</label>
+			<input type="text" id="lname" name="lastname" placeholder="Ваш E-mail">
+
+
+			<label for="subject">Ваш вопрос</label>
+			<textarea id="subject" name="subject" placeholder="Напишите свой вопрос" style="height:200px"></textarea>
+
+			<input type="submit" value="Отправить">
+
+  </form>
+</div>
+	</div>	
+		</body>
+	</body>
+	<footer> <!-- подвал -->
+		<div>
+			<p style="font-size: 20px; color:white; background-color:#22225b"> 	&#169 2020 Codesford</p>
+		</div>
+	</footer>
+</html>
